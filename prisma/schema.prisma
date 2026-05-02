@@ -14,3 +14,12 @@ model Character {
   personality String
   createdAt   DateTime @default(now())
 }
+
+model KnowledgeChunk {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  text      String
+  embedding Float[]
+  personaId String?
+  source    String?
+  createdAt DateTime @default(now())
+}

@@ -11,10 +11,13 @@
     "db:generate": "dotenv -e .env.local -- prisma generate"
   },
   "dependencies": {
+    "@ai-sdk/voyage": "^1.0.3",
     "@anthropic-ai/sdk": "^0.91.1",
     "@hono/node-server": "^1.19.14",
     "@mastra/core": "^1.29.1",
+    "@mastra/rag": "^2.2.1",
     "@prisma/client": "^6.19.3",
+    "ai": "^6.0.174",
     "dotenv-cli": "^11.0.0",
     "hono": "^4.12.15",
     "mastra": "^1.7.1",
